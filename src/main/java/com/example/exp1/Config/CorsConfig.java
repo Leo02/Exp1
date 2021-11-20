@@ -22,6 +22,7 @@ public class CorsConfig {
 
         @Bean
         public CorsFilter corsFilter() {
+            //GITHUB合作维护测试
             UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
             source.registerCorsConfiguration("/**", buildConfig());
             return new CorsFilter(source);
